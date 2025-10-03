@@ -29,13 +29,16 @@ This project demonstrates how to:<br>
 ✔ Use web scraping to collect and manage image datasets<br>
 ✔ Develop fun, user-engaging web applications<br>
 
+Project Live Demo in YouTube:<br>
+<a href="https://youtu.be/e8aG8OHnEGQ?si=42NyMyC6nGNlsGjZ">HOTMASH Demo</a><br>
+
 Photos:<br>
 
 Visitors Page <br>
 
-<img src="https://github.com/Vishlu/Hotmash/blob/dda0ea3e9300d74cfea1d63d4e19af10435c0451/Screenshot%20(47).png" width="400" alt="Screenshot 1"><br>
+<img src="https://github.com/Vishlu/Hotmash/blob/dda0ea3e9300d74cfea1d63d4e19af10435c0451/Screenshot%20(47).png" width="600" alt="Screenshot 1"><br>
 
 Ranking Page <br>
 
-<img src="https://github.com/Vishlu/Hotmash/blob/dda0ea3e9300d74cfea1d63d4e19af10435c0451/Screenshot%20(84).png" width="400" alt="Screenshot 2">
+<img src="https://github.com/Vishlu/Hotmash/blob/dda0ea3e9300d74cfea1d63d4e19af10435c0451/Screenshot%20(84).png" width="600" alt="Screenshot 2">
 
