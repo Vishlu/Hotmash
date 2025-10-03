@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTMASH</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light gray background */
+            color: #333; /* Dark gray text */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #800000; /* Maroon background */
+            color: #fff; /* White text */
+            text-align: center;
+            padding: 6px 0;
+        }
+        #photo-comparison {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        #photo-comparison a {
+            display: inline-block;
+            text-align: center;
+            margin: 10px;
+        }
+        #photo-comparison img {
+            width: 230px; /* Fixed width for consistency */
+            height: auto; /* Maintain aspect ratio */
+            border: 2px solid #ccc; /* Gray border around images */
+            border-radius: 5px; /* Rounded corners */
+        }
+        h2 {
+            text-align: center;
+            margin-top: 25px;
+        }
+        h3{
+            text-align: center;
+        }
+        footer {
+            background-color: #f0f0f0; /* Light gray background */
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px; /* Distance from photo-comparison */
+            width: 100%;
+        }
+        footer a {
+            color: #333; /* Dark gray text */
+            text-decoration: none; /* Remove underline from links */
+            margin: 0 10px; /* Spacing between links */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HOTMASH</h1>
+    </header>
+    <!-- Slogan: "Who's hotter? Pick your queen of the screen!" -->
+    <b><h2>Who's hotter? Pick your queen of the screen!</h2></b>
+    <!-- Additional slogan -->
+    <b><h3>Battle of beauty? Right to Choose.</h3></b>
+
+    {% if error %}
+        <p>{{ error }}</p>
+    {% else %}
+        <div id="photo-comparison">
+            <a href="{% url 'vote' image1.id image2.id image1.id %}">
+                <img id="img1" src="{{ image1.image.url }}" alt="Image 1">
+            </a>
+            <p>OR</p>
+            <a href="{% url 'vote' image1.id image2.id image2.id %}">
+                <img id="img2" src="{{ image2.image.url }}" alt="Image 2">
+            </a>
+        </div>
+    {% endif %}
+
+    <!-- Footer Section -->
+    <footer>
+        <a href="#">About Us</a>
+        <a href="{% url 'recent_winner' %}">Ranking</a>
+        <a href="https://myzone.careerlauncher.com/" target="_blank">Career Launcher</a>
+        <!-- Add more links as needed -->
+    </footer>
+    <center><p>Total visitors: {{ counter }}</p></center>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const img1 = document.getElementById('img1').src;
+            const img2 = document.getElementById('img2').src;
+
+            if (img1 === img2) {
+                location.reload();
+            }
+        });
+    </script>
+</body>
+</html>
