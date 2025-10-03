@@ -23,10 +23,10 @@ Data Handling: SQLite3
 Web Scraping & Automation: BeautifulSoup / Selenium
 Algorithm: ELO Rating Algorithm
 
-This project demonstrates how to:
-✔ Work with file uploads in Django
-✔ Build interactive voting systems with ranking algorithms
-✔ Use web scraping to collect and manage image datasets
-✔ Develop fun, user-engaging web applications
+This project demonstrates how to:<br>
+✔ Work with file uploads in Django<br>
+✔ Build interactive voting systems with ranking algorithms<br>
+✔ Use web scraping to collect and manage image datasets<br>
+✔ Develop fun, user-engaging web applications<br>
 
 
