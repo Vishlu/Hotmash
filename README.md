@@ -15,13 +15,13 @@ In this project, I built an interactive platform where users can vote between tw
 2) Automated scraping using Python tools (BeautifulSoup / Selenium).
 3) Dataset used to populate the voting system for global actress comparisons.
 
-🛠 Tech Stack
+🛠 Tech Stack<br>
 
-Backend: Python, Django
-Frontend: HTML, CSS
-Data Handling: SQLite3
-Web Scraping & Automation: BeautifulSoup / Selenium
-Algorithm: ELO Rating Algorithm
+Backend: Python, Django<br>
+Frontend: HTML, CSS<br>
+Data Handling: SQLite3<br>
+Web Scraping & Automation: BeautifulSoup / Selenium<br>
+Algorithm: ELO Rating Algorithm<br>
 
 This project demonstrates how to:<br>
 ✔ Work with file uploads in Django<br>
